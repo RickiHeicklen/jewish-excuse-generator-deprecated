@@ -10,12 +10,15 @@
 
 
 // Define an array of strings
-const strings = ["String 1", "String 2", "String 3", "String 4"];
+const dates = ["day 1", "day 2", "day 3", "day 4"];
+const excuses = ["String 1", "String 2", "String 3", "String 4"];
 
 // Get the user input and display the random string
 function generateRandomString() {
   const userInput = document.getElementById("user-input").value;
-  const randomString = strings[Math.floor(Math.random() * strings.length)];
-  const output = `You typed: ${userInput}. The random string is: ${randomString}.`;
+  const hebrewDate = dates[Math.floor(Math.random() * dates.length)];
+
+  const randomExcuse = excuses[Math.floor(Math.random() * excuses.length)];
+  const output = `Sorry, I can't make it to ${userInput}. It's ${hebrewDate}, and ${randomExcuse}`;
   document.getElementById("output").innerHTML = output;
 }
