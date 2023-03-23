@@ -31,18 +31,22 @@ button:hover {
   background-color: #0077a8;
 }
 
+/* this is the text entry box, where it says e.g. your kidney transplant */
 input[type="text"], button[type="button"] {
   padding: 10px;
   border-radius: 5px;
   border: none;
   margin-top: 10px;
 }
-
 input[type="text"] {
-  width: 100%;
+  width: 40%;
   box-sizing: border-box;
 }
 
 #user-output {
+  margin-top: 20px;
+}
+
+#output {
   margin-top: 20px;
 }

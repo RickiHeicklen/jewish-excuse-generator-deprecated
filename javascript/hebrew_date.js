@@ -20,7 +20,7 @@ function getHebrewDate(){
     var hdt = hebcal.hdate.abs2hebrew(abs);
     var mname = hebcal.hdate.getMonthName(hdt.mm, hdt.yy);
 
-    const gematria = ["aleph", "bet", "gimmel", "daled", "hey", "vav", "zayin", "chet", "tet", "yud", 
+    const gematria = ["N/A", "aleph", "bet", "gimmel", "daled", "hey", "vav", "zayin", "chet", "tet", "yud", 
     "yud aleph", "yud bet", "yud gimmel", "yud daled", "tet vav", "tet zayin", "yud zayin", "yud chet", "yud tet", "kaf", 
     "kaf aleph", "kaf bet", "kaf gimmel", "kaf daled", "kaf hey", "kaf vav", "kaf zayin", "kaf chet", "kaf tet", "lamed"];
 
