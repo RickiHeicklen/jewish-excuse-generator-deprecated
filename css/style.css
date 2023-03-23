@@ -4,19 +4,35 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 600px;
-  text-align: center;
-  padding: 20px;
-  background-color: #fff;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  /* margin: 0 auto; */
+  max-width: 550px;
+  text-align: left;
+  padding: 30px;
+  background-color: #dddddd;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 0px rgba(0,0,0,0.2);
 }
 
 h1 {
   color: #333;
 }
 
+/* the box where they type in their need for an excuse */
+#user-input {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px; /* i.e. how curved are the edges it */
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* the blue button, where it says "generate excuse" */ 
 button {
   background-color: #008CBA;
   color: #fff;
@@ -26,7 +42,6 @@ button {
   cursor: pointer;
   margin-top: 10px;
 }
-
 button:hover {
   background-color: #0077a8;
 }
@@ -37,6 +52,8 @@ input[type="text"], button[type="button"] {
   border-radius: 5px;
   border: none;
   margin-top: 10px;
+  margin-left: 5px;
+
 }
 input[type="text"] {
   width: 40%;
