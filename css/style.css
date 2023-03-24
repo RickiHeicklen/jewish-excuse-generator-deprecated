@@ -76,6 +76,12 @@ input[type="text"] {
   margin-top: 20px;
 }
 
+#googleForm {
+  margin-top: 40px;
+  font-size: 12px;
+  color:grey
+}
+
 .bottom-bar {
   background-color: #eeeeee; /* background color of the bar */
   color: #008CBA; /* text color */
