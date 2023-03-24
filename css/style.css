@@ -38,12 +38,12 @@ button {
   background-color: #008CBA;
   color: #fff;
   border: none;
-  padding: 20px 20px;
+  padding: 15px 20px;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 17px;
   margin-bottom: 17px;
-  font-size: 15px;
+  font-size: 17px;
 }
 button:hover {
   background-color: #0077a8;
