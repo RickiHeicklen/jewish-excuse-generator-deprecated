@@ -67,3 +67,29 @@ input[type="text"] {
 #output {
   margin-top: 20px;
 }
+
+.bottom-bar {
+  background-color: #dddddd; /* background color of the bar */
+  color: #008CBA; /* text color */
+  text-align: center; /* center the contents */
+  padding: 0px; /* add some padding */
+  position: fixed; /* fix the bar to the bottom of the screen */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* make the bar full width */
+}
+
+.social-icons li {
+  display: inline-block; /* display the icons horizontally */
+  margin: 0 10px; /* add some margin between icons */
+}
+
+.social-icons a {
+  color: #fff; /* color of the icons */
+  font-size: 20px; /* size of the icons */
+}
+
+.social-icons a:hover {
+  color: #ccc; /* color of the icons on hover */
+}
+
