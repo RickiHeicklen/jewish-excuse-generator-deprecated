@@ -3,22 +3,47 @@ body {
   background-color: #f2f2f2;
 }
 
+h1 {
+  color: #333;
+  font-size: 50px;
+}
+
 .container {
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
   margin-bottom: 100px;
-  margin-right: 150px;
+  margin-right: 100px;
   /* margin: 0 auto; */
-  max-width: 700px;
+  max-width: 800px;
   text-align: left;
-  padding: 30px;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  padding-right: 50px;
   background-color: #dddddd;
   border-radius: 5px;
   box-shadow: 0 0 0px rgba(0,0,0,0.2);
 }
 
-h1 {
-  color: #333;
+/* The prompt asking what you need to get out of */
+#prompt-text {
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+/* this is the text entry box, where it says e.g. your kidney transplant */
+input[type="text"], button[type="button"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  margin-left: 5px;
+
+}
+input[type="text"] {
+  width: 40%;
+  box-sizing: border-box;
 }
 
 /* the box where they type in their need for an excuse */
@@ -30,7 +55,7 @@ h1 {
   border-radius: 5px; /* i.e. how curved are the edges it */
   cursor: pointer;
   margin-top: 10px;
-  margin-right: 20px
+  margin-right: 20px;
 }
 
 /* the blue button, where it says "generate excuse" */ 
@@ -49,29 +74,9 @@ button:hover {
   background-color: #0077a8;
 }
 
-/* this is the text entry box, where it says e.g. your kidney transplant */
-input[type="text"], button[type="button"] {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  margin-top: 10px;
-  margin-left: 5px;
-
-}
-input[type="text"] {
-  width: 40%;
-  box-sizing: border-box;
-}
-
-#prompt-text {
-  margin-top: 20px;
-  margin-right: 10px;
-}
-
 #user-output {
   margin-top: 20px;
 }
-
 #output {
   margin-top: 20px;
 }
@@ -82,33 +87,53 @@ input[type="text"] {
   color:grey
 }
 
-.bottom-bar {
+.alignleft {
+	float: left;
+  margin: 0px 20px 30px 0px; /* add some margin (order: top left bottom right*/
+}
+.alignright {
+	float: right;
+  margin: 0px 0px 30px 20px; /* add some margin (order: top left bottom right*/
+}
+
+#bottom-bar {
   background-color: #eeeeee; /* background color of the bar */
   color: #008CBA; /* text color */
-  text-align: right; /* center the contents */
+  text-align: left; /* right the contents */
   text-decoration: none;
-  padding: 5px 5px 5px 5px; /* add some padding */
+  /* padding: 5px 5px 5px 5px; add some padding */
   position: fixed; /* fix the bar to the bottom of the screen */
-  left: 0;
+  left: 0; /* how far from the left of the page does the bar start (should be 0) */
   bottom: 0;
   width: 100%; /* make the bar full width */
-  font-size: 10px ;
-  border-radius: 5px;
-  border: 2px solid rgb(170, 170, 170);
+  font-size: 15px;
+  border-radius: 0px;
+  border-top: 2px solid rgb(170, 170, 170);
 }
 
-.social-icons li {
-  display: inline-block; /* display the icons horizontally */
-  margin: 0 30px 0 0; /* add some margin between icons */
+.names li {
+  float: left; /* the hovertext is false, display inline-block is still needed to remove the bullets */
+  display: inline-block;
+  margin: 0px 20px 0px 0px; /* add some margin (order: top left bottom right*/
 }
-
-.social-icons a {
-  color: #008CBA; /* color of the icons */
-  font-size: 20px; /* size of the icons */
-  text-decoration: none;
+.names a {
+  /* font-size: 15px; size of the icons */
+  text-decoration: underline;
 }
-
-.social-icons a:hover {
+.names a:hover {
   color: #0077a8; /* color of the icons on hover */
 }
 
+.social-icons li {
+  float: right; /* the hovertext is false, display inline-block is still needed to remove the bullets */
+  display: inline-block;
+  margin: 0px 20px 0px 0px; /* add some margin (order: top left bottom right*/
+}
+.social-icons a {
+  color: #008CBA; /* color of the icons */
+  /* font-size: 15px; size of the icons */
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #0077a8; /* color of the icons on hover */
+}
