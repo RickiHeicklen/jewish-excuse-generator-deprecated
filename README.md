@@ -1,4 +1,4 @@
-# jewish-excuse-generator
-A Jewish excuse generator for when you need to avoid some goyishe narishkeit that falls out on chol.
+# Jewish Excuse Generator
+A fake holiday generator for when you don't want to attend some goyishe narishkeit but it falls out on chol. Provides the transliteration of today's Hebrew date followed by a plausible reason that that day has religious significance. 
 
 (Thank you to Adam Scherlis for the idea!) 
